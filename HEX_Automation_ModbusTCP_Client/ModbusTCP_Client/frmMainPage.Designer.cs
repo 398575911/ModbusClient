@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainPage));
             this.txtRead = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnReadCoil = new System.Windows.Forms.Button();
             this.txtReadAddress = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -89,6 +88,16 @@
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.EST_P00000 = new System.Windows.Forms.Label();
+            this.EST_P00001 = new System.Windows.Forms.Label();
+            this.EST_P00002 = new System.Windows.Forms.Label();
+            this.EST_P00003 = new System.Windows.Forms.Label();
+            this.EST_P00004 = new System.Windows.Forms.Label();
+            this.EST_P00005 = new System.Windows.Forms.Label();
+            this.EST_P00006 = new System.Windows.Forms.Label();
+            this.EST_P00007 = new System.Windows.Forms.Label();
+            this.EST_P00008 = new System.Windows.Forms.Label();
+            this.EST_P00009 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
@@ -124,6 +133,16 @@
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
+            this.EST_P00041 = new System.Windows.Forms.Label();
+            this.EST_P00040 = new System.Windows.Forms.Label();
+            this.EST_P00042 = new System.Windows.Forms.Label();
+            this.EST_P00043 = new System.Windows.Forms.Label();
+            this.EST_P00044 = new System.Windows.Forms.Label();
+            this.EST_P00045 = new System.Windows.Forms.Label();
+            this.EST_P00046 = new System.Windows.Forms.Label();
+            this.EST_P00047 = new System.Windows.Forms.Label();
+            this.EST_P00048 = new System.Windows.Forms.Label();
+            this.EST_P00049 = new System.Windows.Forms.Label();
             this.timerReadCoil = new System.Windows.Forms.Timer(this.components);
             this.label83 = new System.Windows.Forms.Label();
             this.txtIpAddress = new System.Windows.Forms.TextBox();
@@ -165,41 +184,14 @@
             this.txtTipoOleo = new System.Windows.Forms.TextBox();
             this.txtModo = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnAuto = new System.Windows.Forms.Button();
-            this.btnManual = new System.Windows.Forms.Button();
             this.btnEnviarModelo = new System.Windows.Forms.Button();
             this.tabPageCoilRegister = new System.Windows.Forms.TabPage();
             this.grpBoxRegisters = new System.Windows.Forms.GroupBox();
             this.grpBoxCoils = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabPageSobre = new System.Windows.Forms.TabPage();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.LabelStrip001 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.EST_P00000 = new System.Windows.Forms.Label();
-            this.EST_P00001 = new System.Windows.Forms.Label();
-            this.EST_P00002 = new System.Windows.Forms.Label();
-            this.EST_P00003 = new System.Windows.Forms.Label();
-            this.EST_P00004 = new System.Windows.Forms.Label();
-            this.EST_P00005 = new System.Windows.Forms.Label();
-            this.EST_P00006 = new System.Windows.Forms.Label();
-            this.EST_P00007 = new System.Windows.Forms.Label();
-            this.EST_P00008 = new System.Windows.Forms.Label();
-            this.EST_P00009 = new System.Windows.Forms.Label();
-            this.EST_P00041 = new System.Windows.Forms.Label();
-            this.EST_P00040 = new System.Windows.Forms.Label();
-            this.EST_P00042 = new System.Windows.Forms.Label();
-            this.EST_P00043 = new System.Windows.Forms.Label();
-            this.EST_P00044 = new System.Windows.Forms.Label();
-            this.EST_P00045 = new System.Windows.Forms.Label();
-            this.EST_P00046 = new System.Windows.Forms.Label();
-            this.EST_P00047 = new System.Windows.Forms.Label();
-            this.EST_P00048 = new System.Windows.Forms.Label();
-            this.EST_P00049 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -215,15 +207,13 @@
             this.groupIHM.SuspendLayout();
             this.tabPageCoilRegister.SuspendLayout();
             this.grpBoxCoils.SuspendLayout();
-            this.tabPageSobre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtRead
             // 
             this.txtRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtRead.Location = new System.Drawing.Point(80, 140);
+            this.txtRead.Location = new System.Drawing.Point(80, 87);
             this.txtRead.Multiline = true;
             this.txtRead.Name = "txtRead";
             this.txtRead.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -234,23 +224,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(9, 140);
+            this.label3.Location = new System.Drawing.Point(9, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Coils Status:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnReadCoil
-            // 
-            this.btnReadCoil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnReadCoil.Location = new System.Drawing.Point(80, 87);
-            this.btnReadCoil.Name = "btnReadCoil";
-            this.btnReadCoil.Size = new System.Drawing.Size(92, 47);
-            this.btnReadCoil.TabIndex = 7;
-            this.btnReadCoil.Text = "Read Multiple\r\nCoils";
-            this.btnReadCoil.UseVisualStyleBackColor = true;
-            this.btnReadCoil.Click += new System.EventHandler(this.btnReadCoil_Click);
             // 
             // txtReadAddress
             // 
@@ -344,9 +323,9 @@
             // btnWriteMultCoils
             // 
             this.btnWriteMultCoils.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnWriteMultCoils.Location = new System.Drawing.Point(252, 317);
+            this.btnWriteMultCoils.Location = new System.Drawing.Point(252, 265);
             this.btnWriteMultCoils.Name = "btnWriteMultCoils";
-            this.btnWriteMultCoils.Size = new System.Drawing.Size(92, 47);
+            this.btnWriteMultCoils.Size = new System.Drawing.Size(99, 47);
             this.btnWriteMultCoils.TabIndex = 16;
             this.btnWriteMultCoils.Text = "Write Multiple\r\nCoils";
             this.btnWriteMultCoils.UseVisualStyleBackColor = true;
@@ -358,104 +337,104 @@
             this.chkMult1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult1.Location = new System.Drawing.Point(252, 87);
             this.chkMult1.Name = "chkMult1";
-            this.chkMult1.Size = new System.Drawing.Size(100, 17);
+            this.chkMult1.Size = new System.Drawing.Size(106, 17);
             this.chkMult1.TabIndex = 13;
-            this.chkMult1.Text = "1 - Check = ON";
+            this.chkMult1.Text = "01 - Check = ON";
             this.chkMult1.UseVisualStyleBackColor = true;
             // 
             // chkMult2
             // 
             this.chkMult2.AutoSize = true;
             this.chkMult2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult2.Location = new System.Drawing.Point(252, 110);
+            this.chkMult2.Location = new System.Drawing.Point(252, 104);
             this.chkMult2.Name = "chkMult2";
-            this.chkMult2.Size = new System.Drawing.Size(99, 17);
+            this.chkMult2.Size = new System.Drawing.Size(105, 17);
             this.chkMult2.TabIndex = 13;
-            this.chkMult2.Text = "2 - Check = OK";
+            this.chkMult2.Text = "02 - Check = OK";
             this.chkMult2.UseVisualStyleBackColor = true;
             // 
             // chkMult3
             // 
             this.chkMult3.AutoSize = true;
             this.chkMult3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult3.Location = new System.Drawing.Point(252, 133);
+            this.chkMult3.Location = new System.Drawing.Point(252, 121);
             this.chkMult3.Name = "chkMult3";
-            this.chkMult3.Size = new System.Drawing.Size(99, 17);
+            this.chkMult3.Size = new System.Drawing.Size(105, 17);
             this.chkMult3.TabIndex = 13;
-            this.chkMult3.Text = "3 - Check = OK";
+            this.chkMult3.Text = "03 - Check = OK";
             this.chkMult3.UseVisualStyleBackColor = true;
             // 
             // chkMult4
             // 
             this.chkMult4.AutoSize = true;
             this.chkMult4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult4.Location = new System.Drawing.Point(252, 156);
+            this.chkMult4.Location = new System.Drawing.Point(252, 138);
             this.chkMult4.Name = "chkMult4";
-            this.chkMult4.Size = new System.Drawing.Size(99, 17);
+            this.chkMult4.Size = new System.Drawing.Size(105, 17);
             this.chkMult4.TabIndex = 13;
-            this.chkMult4.Text = "4 - Check = OK";
+            this.chkMult4.Text = "04 - Check = OK";
             this.chkMult4.UseVisualStyleBackColor = true;
             // 
             // chkMult5
             // 
             this.chkMult5.AutoSize = true;
             this.chkMult5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult5.Location = new System.Drawing.Point(252, 179);
+            this.chkMult5.Location = new System.Drawing.Point(252, 156);
             this.chkMult5.Name = "chkMult5";
-            this.chkMult5.Size = new System.Drawing.Size(99, 17);
+            this.chkMult5.Size = new System.Drawing.Size(105, 17);
             this.chkMult5.TabIndex = 13;
-            this.chkMult5.Text = "5 - Check = OK";
+            this.chkMult5.Text = "05 - Check = OK";
             this.chkMult5.UseVisualStyleBackColor = true;
             // 
             // chkMult6
             // 
             this.chkMult6.AutoSize = true;
             this.chkMult6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult6.Location = new System.Drawing.Point(252, 202);
+            this.chkMult6.Location = new System.Drawing.Point(252, 173);
             this.chkMult6.Name = "chkMult6";
-            this.chkMult6.Size = new System.Drawing.Size(99, 17);
+            this.chkMult6.Size = new System.Drawing.Size(105, 17);
             this.chkMult6.TabIndex = 13;
-            this.chkMult6.Text = "6 - Check = OK";
+            this.chkMult6.Text = "06 - Check = OK";
             this.chkMult6.UseVisualStyleBackColor = true;
             // 
             // chkMult7
             // 
             this.chkMult7.AutoSize = true;
             this.chkMult7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult7.Location = new System.Drawing.Point(252, 225);
+            this.chkMult7.Location = new System.Drawing.Point(252, 191);
             this.chkMult7.Name = "chkMult7";
-            this.chkMult7.Size = new System.Drawing.Size(99, 17);
+            this.chkMult7.Size = new System.Drawing.Size(105, 17);
             this.chkMult7.TabIndex = 13;
-            this.chkMult7.Text = "7 - Check = OK";
+            this.chkMult7.Text = "07 - Check = OK";
             this.chkMult7.UseVisualStyleBackColor = true;
             // 
             // chkMult8
             // 
             this.chkMult8.AutoSize = true;
             this.chkMult8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult8.Location = new System.Drawing.Point(252, 248);
+            this.chkMult8.Location = new System.Drawing.Point(252, 208);
             this.chkMult8.Name = "chkMult8";
-            this.chkMult8.Size = new System.Drawing.Size(99, 17);
+            this.chkMult8.Size = new System.Drawing.Size(105, 17);
             this.chkMult8.TabIndex = 13;
-            this.chkMult8.Text = "8 - Check = OK";
+            this.chkMult8.Text = "08 - Check = OK";
             this.chkMult8.UseVisualStyleBackColor = true;
             // 
             // chkMult9
             // 
             this.chkMult9.AutoSize = true;
             this.chkMult9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult9.Location = new System.Drawing.Point(252, 271);
+            this.chkMult9.Location = new System.Drawing.Point(252, 227);
             this.chkMult9.Name = "chkMult9";
-            this.chkMult9.Size = new System.Drawing.Size(99, 17);
+            this.chkMult9.Size = new System.Drawing.Size(105, 17);
             this.chkMult9.TabIndex = 13;
-            this.chkMult9.Text = "9 - Check = OK";
+            this.chkMult9.Text = "09 - Check = OK";
             this.chkMult9.UseVisualStyleBackColor = true;
             // 
             // chkMult10
             // 
             this.chkMult10.AutoSize = true;
             this.chkMult10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chkMult10.Location = new System.Drawing.Point(252, 294);
+            this.chkMult10.Location = new System.Drawing.Point(252, 245);
             this.chkMult10.Name = "chkMult10";
             this.chkMult10.Size = new System.Drawing.Size(105, 17);
             this.chkMult10.TabIndex = 13;
@@ -886,6 +865,106 @@
             this.label14.Text = "DESCRIÇÃO";
             this.label14.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
+            // EST_P00000
+            // 
+            this.EST_P00000.AutoSize = true;
+            this.EST_P00000.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00000.Location = new System.Drawing.Point(388, 25);
+            this.EST_P00000.Name = "EST_P00000";
+            this.EST_P00000.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00000.TabIndex = 1;
+            this.EST_P00000.Text = "FALSE";
+            // 
+            // EST_P00001
+            // 
+            this.EST_P00001.AutoSize = true;
+            this.EST_P00001.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00001.Location = new System.Drawing.Point(388, 49);
+            this.EST_P00001.Name = "EST_P00001";
+            this.EST_P00001.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00001.TabIndex = 1;
+            this.EST_P00001.Text = "FALSE";
+            // 
+            // EST_P00002
+            // 
+            this.EST_P00002.AutoSize = true;
+            this.EST_P00002.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00002.Location = new System.Drawing.Point(388, 73);
+            this.EST_P00002.Name = "EST_P00002";
+            this.EST_P00002.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00002.TabIndex = 1;
+            this.EST_P00002.Text = "FALSE";
+            // 
+            // EST_P00003
+            // 
+            this.EST_P00003.AutoSize = true;
+            this.EST_P00003.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00003.Location = new System.Drawing.Point(388, 97);
+            this.EST_P00003.Name = "EST_P00003";
+            this.EST_P00003.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00003.TabIndex = 1;
+            this.EST_P00003.Text = "FALSE";
+            // 
+            // EST_P00004
+            // 
+            this.EST_P00004.AutoSize = true;
+            this.EST_P00004.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00004.Location = new System.Drawing.Point(388, 121);
+            this.EST_P00004.Name = "EST_P00004";
+            this.EST_P00004.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00004.TabIndex = 1;
+            this.EST_P00004.Text = "FALSE";
+            // 
+            // EST_P00005
+            // 
+            this.EST_P00005.AutoSize = true;
+            this.EST_P00005.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00005.Location = new System.Drawing.Point(388, 145);
+            this.EST_P00005.Name = "EST_P00005";
+            this.EST_P00005.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00005.TabIndex = 1;
+            this.EST_P00005.Text = "FALSE";
+            // 
+            // EST_P00006
+            // 
+            this.EST_P00006.AutoSize = true;
+            this.EST_P00006.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00006.Location = new System.Drawing.Point(388, 169);
+            this.EST_P00006.Name = "EST_P00006";
+            this.EST_P00006.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00006.TabIndex = 1;
+            this.EST_P00006.Text = "FALSE";
+            // 
+            // EST_P00007
+            // 
+            this.EST_P00007.AutoSize = true;
+            this.EST_P00007.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00007.Location = new System.Drawing.Point(388, 193);
+            this.EST_P00007.Name = "EST_P00007";
+            this.EST_P00007.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00007.TabIndex = 1;
+            this.EST_P00007.Text = "FALSE";
+            // 
+            // EST_P00008
+            // 
+            this.EST_P00008.AutoSize = true;
+            this.EST_P00008.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00008.Location = new System.Drawing.Point(388, 217);
+            this.EST_P00008.Name = "EST_P00008";
+            this.EST_P00008.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00008.TabIndex = 1;
+            this.EST_P00008.Text = "FALSE";
+            // 
+            // EST_P00009
+            // 
+            this.EST_P00009.AutoSize = true;
+            this.EST_P00009.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00009.Location = new System.Drawing.Point(388, 241);
+            this.EST_P00009.Name = "EST_P00009";
+            this.EST_P00009.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00009.TabIndex = 1;
+            this.EST_P00009.Text = "FALSE";
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -1299,6 +1378,106 @@
             this.label53.TabIndex = 0;
             this.label53.Text = "RESERVA";
             // 
+            // EST_P00041
+            // 
+            this.EST_P00041.AutoSize = true;
+            this.EST_P00041.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00041.Location = new System.Drawing.Point(388, 25);
+            this.EST_P00041.Name = "EST_P00041";
+            this.EST_P00041.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00041.TabIndex = 1;
+            this.EST_P00041.Text = "FALSE";
+            // 
+            // EST_P00040
+            // 
+            this.EST_P00040.AutoSize = true;
+            this.EST_P00040.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00040.Location = new System.Drawing.Point(388, 49);
+            this.EST_P00040.Name = "EST_P00040";
+            this.EST_P00040.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00040.TabIndex = 1;
+            this.EST_P00040.Text = "FALSE";
+            // 
+            // EST_P00042
+            // 
+            this.EST_P00042.AutoSize = true;
+            this.EST_P00042.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00042.Location = new System.Drawing.Point(388, 73);
+            this.EST_P00042.Name = "EST_P00042";
+            this.EST_P00042.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00042.TabIndex = 1;
+            this.EST_P00042.Text = "FALSE";
+            // 
+            // EST_P00043
+            // 
+            this.EST_P00043.AutoSize = true;
+            this.EST_P00043.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00043.Location = new System.Drawing.Point(388, 97);
+            this.EST_P00043.Name = "EST_P00043";
+            this.EST_P00043.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00043.TabIndex = 1;
+            this.EST_P00043.Text = "FALSE";
+            // 
+            // EST_P00044
+            // 
+            this.EST_P00044.AutoSize = true;
+            this.EST_P00044.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00044.Location = new System.Drawing.Point(388, 121);
+            this.EST_P00044.Name = "EST_P00044";
+            this.EST_P00044.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00044.TabIndex = 1;
+            this.EST_P00044.Text = "FALSE";
+            // 
+            // EST_P00045
+            // 
+            this.EST_P00045.AutoSize = true;
+            this.EST_P00045.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00045.Location = new System.Drawing.Point(388, 145);
+            this.EST_P00045.Name = "EST_P00045";
+            this.EST_P00045.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00045.TabIndex = 1;
+            this.EST_P00045.Text = "FALSE";
+            // 
+            // EST_P00046
+            // 
+            this.EST_P00046.AutoSize = true;
+            this.EST_P00046.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00046.Location = new System.Drawing.Point(388, 169);
+            this.EST_P00046.Name = "EST_P00046";
+            this.EST_P00046.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00046.TabIndex = 1;
+            this.EST_P00046.Text = "FALSE";
+            // 
+            // EST_P00047
+            // 
+            this.EST_P00047.AutoSize = true;
+            this.EST_P00047.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00047.Location = new System.Drawing.Point(388, 193);
+            this.EST_P00047.Name = "EST_P00047";
+            this.EST_P00047.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00047.TabIndex = 1;
+            this.EST_P00047.Text = "FALSE";
+            // 
+            // EST_P00048
+            // 
+            this.EST_P00048.AutoSize = true;
+            this.EST_P00048.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00048.Location = new System.Drawing.Point(388, 217);
+            this.EST_P00048.Name = "EST_P00048";
+            this.EST_P00048.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00048.TabIndex = 1;
+            this.EST_P00048.Text = "FALSE";
+            // 
+            // EST_P00049
+            // 
+            this.EST_P00049.AutoSize = true;
+            this.EST_P00049.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EST_P00049.Location = new System.Drawing.Point(388, 241);
+            this.EST_P00049.Name = "EST_P00049";
+            this.EST_P00049.Size = new System.Drawing.Size(50, 16);
+            this.EST_P00049.TabIndex = 1;
+            this.EST_P00049.Text = "FALSE";
+            // 
             // timerReadCoil
             // 
             this.timerReadCoil.Interval = 1000;
@@ -1398,7 +1577,6 @@
             this.tabControl1.Controls.Add(this.tabPageExcel);
             this.tabControl1.Controls.Add(this.tabPageIHM);
             this.tabControl1.Controls.Add(this.tabPageCoilRegister);
-            this.tabControl1.Controls.Add(this.tabPageSobre);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
@@ -1704,8 +1882,6 @@
             this.groupIHM.Controls.Add(this.txtModo);
             this.groupIHM.Controls.Add(this.label13);
             this.groupIHM.Controls.Add(this.label9);
-            this.groupIHM.Controls.Add(this.btnAuto);
-            this.groupIHM.Controls.Add(this.btnManual);
             this.groupIHM.Controls.Add(this.label83);
             this.groupIHM.Controls.Add(this.btnEnviarModelo);
             this.groupIHM.Controls.Add(this.label10);
@@ -1771,32 +1947,6 @@
             this.label13.TabIndex = 22;
             this.label13.Text = "Conexão com PLC:";
             // 
-            // btnAuto
-            // 
-            this.btnAuto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAuto.Image = global::ModbusTCP_Client.Properties.Resources.AUTOMATIC;
-            this.btnAuto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAuto.Location = new System.Drawing.Point(413, 69);
-            this.btnAuto.Name = "btnAuto";
-            this.btnAuto.Size = new System.Drawing.Size(133, 48);
-            this.btnAuto.TabIndex = 21;
-            this.btnAuto.Text = "             Automático";
-            this.btnAuto.UseVisualStyleBackColor = true;
-            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
-            // 
-            // btnManual
-            // 
-            this.btnManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManual.Image = ((System.Drawing.Image)(resources.GetObject("btnManual.Image")));
-            this.btnManual.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManual.Location = new System.Drawing.Point(413, 15);
-            this.btnManual.Name = "btnManual";
-            this.btnManual.Size = new System.Drawing.Size(133, 48);
-            this.btnManual.TabIndex = 23;
-            this.btnManual.Text = "            Manual";
-            this.btnManual.UseVisualStyleBackColor = true;
-            this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
-            // 
             // btnEnviarModelo
             // 
             this.btnEnviarModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
@@ -1860,7 +2010,6 @@
             this.grpBoxCoils.Controls.Add(this.label8);
             this.grpBoxCoils.Controls.Add(this.chkMult7);
             this.grpBoxCoils.Controls.Add(this.chkMult8);
-            this.grpBoxCoils.Controls.Add(this.btnReadCoil);
             this.grpBoxCoils.Enabled = false;
             this.grpBoxCoils.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxCoils.Location = new System.Drawing.Point(15, 15);
@@ -1892,58 +2041,6 @@
             this.label7.Text = "Endereço\r\nInicial:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tabPageSobre
-            // 
-            this.tabPageSobre.Controls.Add(this.pictureBox3);
-            this.tabPageSobre.Controls.Add(this.label87);
-            this.tabPageSobre.Controls.Add(this.label86);
-            this.tabPageSobre.Controls.Add(this.label11);
-            this.tabPageSobre.Location = new System.Drawing.Point(4, 27);
-            this.tabPageSobre.Name = "tabPageSobre";
-            this.tabPageSobre.Size = new System.Drawing.Size(1110, 606);
-            this.tabPageSobre.TabIndex = 4;
-            this.tabPageSobre.Text = "Sobre";
-            this.tabPageSobre.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ModbusTCP_Client.Properties.Resources.LOGO_HEX;
-            this.pictureBox3.Location = new System.Drawing.Point(874, 509);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(234, 97);
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label87.Location = new System.Drawing.Point(935, 488);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(172, 18);
-            this.label87.TabIndex = 0;
-            this.label87.Text = "Versão do software: v1.1";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(12, 35);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(13, 100);
-            this.label86.TabIndex = 0;
-            this.label86.Text = ".\r\n.\r\n.\r\n.\r\n.";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(189, 24);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "- Sobre o Software:";
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1962,206 +2059,6 @@
             this.LabelStrip001.Text = "StatusStrip001";
             this.LabelStrip001.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // EST_P00000
-            // 
-            this.EST_P00000.AutoSize = true;
-            this.EST_P00000.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00000.Location = new System.Drawing.Point(388, 25);
-            this.EST_P00000.Name = "EST_P00000";
-            this.EST_P00000.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00000.TabIndex = 1;
-            this.EST_P00000.Text = "FALSE";
-            // 
-            // EST_P00001
-            // 
-            this.EST_P00001.AutoSize = true;
-            this.EST_P00001.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00001.Location = new System.Drawing.Point(388, 49);
-            this.EST_P00001.Name = "EST_P00001";
-            this.EST_P00001.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00001.TabIndex = 1;
-            this.EST_P00001.Text = "FALSE";
-            // 
-            // EST_P00002
-            // 
-            this.EST_P00002.AutoSize = true;
-            this.EST_P00002.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00002.Location = new System.Drawing.Point(388, 73);
-            this.EST_P00002.Name = "EST_P00002";
-            this.EST_P00002.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00002.TabIndex = 1;
-            this.EST_P00002.Text = "FALSE";
-            // 
-            // EST_P00003
-            // 
-            this.EST_P00003.AutoSize = true;
-            this.EST_P00003.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00003.Location = new System.Drawing.Point(388, 97);
-            this.EST_P00003.Name = "EST_P00003";
-            this.EST_P00003.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00003.TabIndex = 1;
-            this.EST_P00003.Text = "FALSE";
-            // 
-            // EST_P00004
-            // 
-            this.EST_P00004.AutoSize = true;
-            this.EST_P00004.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00004.Location = new System.Drawing.Point(388, 121);
-            this.EST_P00004.Name = "EST_P00004";
-            this.EST_P00004.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00004.TabIndex = 1;
-            this.EST_P00004.Text = "FALSE";
-            // 
-            // EST_P00005
-            // 
-            this.EST_P00005.AutoSize = true;
-            this.EST_P00005.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00005.Location = new System.Drawing.Point(388, 145);
-            this.EST_P00005.Name = "EST_P00005";
-            this.EST_P00005.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00005.TabIndex = 1;
-            this.EST_P00005.Text = "FALSE";
-            // 
-            // EST_P00006
-            // 
-            this.EST_P00006.AutoSize = true;
-            this.EST_P00006.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00006.Location = new System.Drawing.Point(388, 169);
-            this.EST_P00006.Name = "EST_P00006";
-            this.EST_P00006.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00006.TabIndex = 1;
-            this.EST_P00006.Text = "FALSE";
-            // 
-            // EST_P00007
-            // 
-            this.EST_P00007.AutoSize = true;
-            this.EST_P00007.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00007.Location = new System.Drawing.Point(388, 193);
-            this.EST_P00007.Name = "EST_P00007";
-            this.EST_P00007.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00007.TabIndex = 1;
-            this.EST_P00007.Text = "FALSE";
-            // 
-            // EST_P00008
-            // 
-            this.EST_P00008.AutoSize = true;
-            this.EST_P00008.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00008.Location = new System.Drawing.Point(388, 217);
-            this.EST_P00008.Name = "EST_P00008";
-            this.EST_P00008.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00008.TabIndex = 1;
-            this.EST_P00008.Text = "FALSE";
-            // 
-            // EST_P00009
-            // 
-            this.EST_P00009.AutoSize = true;
-            this.EST_P00009.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00009.Location = new System.Drawing.Point(388, 241);
-            this.EST_P00009.Name = "EST_P00009";
-            this.EST_P00009.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00009.TabIndex = 1;
-            this.EST_P00009.Text = "FALSE";
-            // 
-            // EST_P00041
-            // 
-            this.EST_P00041.AutoSize = true;
-            this.EST_P00041.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00041.Location = new System.Drawing.Point(388, 25);
-            this.EST_P00041.Name = "EST_P00041";
-            this.EST_P00041.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00041.TabIndex = 1;
-            this.EST_P00041.Text = "FALSE";
-            // 
-            // EST_P00040
-            // 
-            this.EST_P00040.AutoSize = true;
-            this.EST_P00040.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00040.Location = new System.Drawing.Point(388, 49);
-            this.EST_P00040.Name = "EST_P00040";
-            this.EST_P00040.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00040.TabIndex = 1;
-            this.EST_P00040.Text = "FALSE";
-            // 
-            // EST_P00042
-            // 
-            this.EST_P00042.AutoSize = true;
-            this.EST_P00042.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00042.Location = new System.Drawing.Point(388, 73);
-            this.EST_P00042.Name = "EST_P00042";
-            this.EST_P00042.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00042.TabIndex = 1;
-            this.EST_P00042.Text = "FALSE";
-            // 
-            // EST_P00043
-            // 
-            this.EST_P00043.AutoSize = true;
-            this.EST_P00043.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00043.Location = new System.Drawing.Point(388, 97);
-            this.EST_P00043.Name = "EST_P00043";
-            this.EST_P00043.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00043.TabIndex = 1;
-            this.EST_P00043.Text = "FALSE";
-            // 
-            // EST_P00044
-            // 
-            this.EST_P00044.AutoSize = true;
-            this.EST_P00044.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00044.Location = new System.Drawing.Point(388, 121);
-            this.EST_P00044.Name = "EST_P00044";
-            this.EST_P00044.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00044.TabIndex = 1;
-            this.EST_P00044.Text = "FALSE";
-            // 
-            // EST_P00045
-            // 
-            this.EST_P00045.AutoSize = true;
-            this.EST_P00045.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00045.Location = new System.Drawing.Point(388, 145);
-            this.EST_P00045.Name = "EST_P00045";
-            this.EST_P00045.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00045.TabIndex = 1;
-            this.EST_P00045.Text = "FALSE";
-            // 
-            // EST_P00046
-            // 
-            this.EST_P00046.AutoSize = true;
-            this.EST_P00046.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00046.Location = new System.Drawing.Point(388, 169);
-            this.EST_P00046.Name = "EST_P00046";
-            this.EST_P00046.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00046.TabIndex = 1;
-            this.EST_P00046.Text = "FALSE";
-            // 
-            // EST_P00047
-            // 
-            this.EST_P00047.AutoSize = true;
-            this.EST_P00047.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00047.Location = new System.Drawing.Point(388, 193);
-            this.EST_P00047.Name = "EST_P00047";
-            this.EST_P00047.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00047.TabIndex = 1;
-            this.EST_P00047.Text = "FALSE";
-            // 
-            // EST_P00048
-            // 
-            this.EST_P00048.AutoSize = true;
-            this.EST_P00048.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00048.Location = new System.Drawing.Point(388, 217);
-            this.EST_P00048.Name = "EST_P00048";
-            this.EST_P00048.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00048.TabIndex = 1;
-            this.EST_P00048.Text = "FALSE";
-            // 
-            // EST_P00049
-            // 
-            this.EST_P00049.AutoSize = true;
-            this.EST_P00049.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EST_P00049.Location = new System.Drawing.Point(388, 241);
-            this.EST_P00049.Name = "EST_P00049";
-            this.EST_P00049.Size = new System.Drawing.Size(50, 16);
-            this.EST_P00049.TabIndex = 1;
-            this.EST_P00049.Text = "FALSE";
-            // 
             // frmMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2174,6 +2071,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingersoll - Modbus Client";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.FrmMainPage_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -2196,9 +2094,6 @@
             this.tabPageCoilRegister.ResumeLayout(false);
             this.grpBoxCoils.ResumeLayout(false);
             this.grpBoxCoils.PerformLayout();
-            this.tabPageSobre.ResumeLayout(false);
-            this.tabPageSobre.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -2209,7 +2104,6 @@
         #endregion
         private System.Windows.Forms.TextBox txtRead;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnReadCoil;
         private System.Windows.Forms.TextBox txtReadAddress;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label label5;
@@ -2304,10 +2198,8 @@
         private System.Windows.Forms.Timer timerReadCoil;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.TextBox txtIpAddress;
-        private System.Windows.Forms.Button btnManual;
         private System.Windows.Forms.Button btnCon;
         private System.Windows.Forms.TextBox txtPort;
-        private System.Windows.Forms.Button btnAuto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnDisconnect;
@@ -2340,8 +2232,6 @@
         private System.Windows.Forms.GroupBox grpBoxCoils;
         private System.Windows.Forms.Panel groupIHM;
         private System.Windows.Forms.Panel groupExcel;
-        private System.Windows.Forms.TabPage tabPageSobre;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtConexao;
@@ -2351,10 +2241,7 @@
         private System.Windows.Forms.TextBox txtTipoOleo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Button btnAbreDados;
-        private System.Windows.Forms.Label label87;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel LabelStrip001;
         private System.Windows.Forms.Label EST_P00000;
