@@ -43,3 +43,14 @@ C:\Users\Rodrigo\OneDrive - HEX Automation Corp\BR180014 - INGERSOLL -  Moderniz
 C:\Users\Rodrigo\OneDrive - HEX Automation Corp\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.CopyComplete
 C:\Users\Rodrigo\OneDrive - HEX Automation Corp\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.exe
 C:\Users\Rodrigo\OneDrive - HEX Automation Corp\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.pdb
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\bin\Debug\ModbusTCP_Client.exe.config
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\bin\Debug\ModbusTCP_Client.exe
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\bin\Debug\ModbusTCP_Client.pdb
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csprojAssemblyReference.cache
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.frmMainPage.resources
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.Properties.Resources.resources
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.GenerateResource.cache
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.CoreCompileInputs.cache
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.CopyComplete
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.exe
+C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.pdb

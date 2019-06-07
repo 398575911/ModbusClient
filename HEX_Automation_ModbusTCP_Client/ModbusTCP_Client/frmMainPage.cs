@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,7 +27,7 @@ namespace ModbusTCP_Client
             // Leitura do arquivo de configuração ao iniciar o software.
             try
             {
-                var Config = File.ReadAllLines(@"C:\Users\Rodrigo\OneDrive - HEX Automation Corp\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\Config.txt").Select(l => l.Split(new[] { '=' })).ToDictionary(str => str[0].Trim(), str => str[1].Trim());
+                var Config = File.ReadAllLines(@"C:\Users\lubck\Documents\BR180014 - INGERSOLL -  Modernização Seleção de Óleo\Ingersoll\HEX_Automation_ModbusTCP_Client\Config.txt").Select(l => l.Split(new[] { '=' })).ToDictionary(str => str[0].Trim(), str => str[1].Trim());
                 string IPAddress = Config["IPAdress"];
                 string Port = Config["Port"];
                 string Path = Config["Data"];
@@ -32,9 +35,9 @@ namespace ModbusTCP_Client
                 txtPort.Text = Port;
                 txtFileName.Text = Path;
                 LabelStrip001.Text = " Arquivo de configuração carregado. ";
-            }           catch
+            }
+            catch
             {
-                //MessageBox.Show(" Não foi possível carregar o arquivo de configuração. ", "Erro!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 LabelStrip001.Text =" Não foi possível carregar o arquivo de configuração. ";
             }
 
@@ -71,17 +74,13 @@ namespace ModbusTCP_Client
             try
             {
                 modbusTCP.Connect(txtIpAddress.Text, Int32.Parse(txtPort.Text));
-
                 grpBoxCoils.Enabled = true;
                 grpBoxRegisters.Enabled = true;
                 btnCon.Enabled = false;
                 btnDisconnect.Enabled = true;
                 groupIHM.Enabled = true;
-
                 txtConexao.BackColor = Color.LightGreen;
                 txtConexao.Text = "  Conectado";
-
-                //MessageBox.Show(" Conexão realizada com sucesso. ", "Conexão", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LabelStrip001.Text = "Conexão realizada com sucesso";
                 tabControl1.SelectedIndex = (tabControl1.SelectedIndex + 1) % tabControl1.TabCount;
             }
@@ -89,17 +88,14 @@ namespace ModbusTCP_Client
             {
                 txtConexao.BackColor = Color.Red;
                 txtConexao.Text = "  Desconectado";
-                //MessageBox.Show(" Não foi possível se conectar. ", "Erro!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 LabelStrip001.Text = " Não foi possível se conectar. ";
             }
         }
-
         // Botão para leitura das bobinas via modbus.
         private void btnReadCoil_Click(object sender, EventArgs e)
         {
             ReadCoils();
         }
-
         // Botão para se desconectar ao PLC.
         private void btnDisconnect_Click(object sender, EventArgs e)
         {
@@ -112,21 +108,18 @@ namespace ModbusTCP_Client
                 ;
             }
         }
-
         // Ao fechar o programa deve-se garantir que a conexão modbus seja encerrada, e o arquivo .xlsx também.
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             try
             {
                 Disconnect();
-                //if (!string.IsNullOrEmpty(MyExcel.DB_PATH))MyExcel.CloseExcel(); //CHECAR ESSA LINHA DE CÓDIGO.
             }
             catch
             {
                 ;
             }    
         }
-
         // Botão para escrita de uma bobina via modbus.
         private void btnWriteSingle_Click(object sender, EventArgs e)
         {
@@ -150,7 +143,6 @@ namespace ModbusTCP_Client
                 ;
             }
         }
-
         // Botão para escrita de múltiplas bobinas via modbus.
         private void btnWriteMultCoils_Click(object sender, EventArgs e)
         {
@@ -183,7 +175,6 @@ namespace ModbusTCP_Client
                 LabelStrip001.Text = " O sistema não está conectado ao PLC. ";
             }         
         }
-
         // Função para leitura das bobinas via modbus.
         public void ReadCoils()
         {
@@ -192,15 +183,10 @@ namespace ModbusTCP_Client
                 if (modbusTCP.Connected)
                 {
                     bool[] readCoil;
-
                     txtRead.Text = "";
-
                     int StartAddress = Int32.Parse(txtReadAddress.Text);
                     int Quantity = Int32.Parse(txtQuantity.Text);
-
-                    readCoil = modbusTCP.ReadCoils(StartAddress, Quantity);
-                    
-
+                    readCoil = modbusTCP.ReadCoils(StartAddress, Quantity);                 
                     for (int i = 0; i < readCoil.Length; i++)
                     {
                         txtRead.Text += readCoil[i].ToString() + "\r\n";                       
@@ -220,7 +206,6 @@ namespace ModbusTCP_Client
         }
         private void fill_HMI(bool[] rd_Coil)
         {
-
             if (!rd_Coil[4])
             {
                 txtModo.BackColor = Color.Blue;
@@ -231,30 +216,6 @@ namespace ModbusTCP_Client
                 txtModo.BackColor = Color.LightGreen;
                 txtModo.Text = "  Automático";
             }
-            /*
-            EST_P00000.Text = rd_Coil[0].ToString();
-            EST_P00001.Text = rd_Coil[1].ToString();
-            EST_P00002.Text = rd_Coil[2].ToString();
-            EST_P00003.Text = rd_Coil[3].ToString();
-            EST_P00004.Text = rd_Coil[4].ToString();
-            EST_P00005.Text = rd_Coil[5].ToString();
-            EST_P00006.Text = rd_Coil[6].ToString();
-            EST_P00007.Text = rd_Coil[7].ToString();
-            EST_P00008.Text = rd_Coil[8].ToString();
-            EST_P00009.Text = rd_Coil[9].ToString();
-            
-            EST_P00041.Text = rd_Coil[10].ToString();
-            EST_P00040.Text = rd_Coil[11].ToString();
-            EST_P00042.Text = rd_Coil[12].ToString();
-            EST_P00043.Text = rd_Coil[13].ToString();
-            EST_P00044.Text = rd_Coil[14].ToString();
-            EST_P00045.Text = rd_Coil[15].ToString();
-            EST_P00046.Text = rd_Coil[16].ToString();
-            EST_P00047.Text = rd_Coil[17].ToString();
-            EST_P00048.Text = rd_Coil[18].ToString();
-            EST_P00049.Text = rd_Coil[19].ToString();
-            */
-
         }
 
         // Quando conectado, a cada "tick" do timer é chamada a função de leitura das bobinas.
@@ -262,14 +223,12 @@ namespace ModbusTCP_Client
         {
             if (modbusTCP.Connected)
             {
-                ReadCoils();
-                
+                ReadCoils();               
             }
             else
             {
                 LabelStrip001.Text = " O sistema não está conectado ao PLC. "; ;
-            }
-            
+            }           
         }
  
         // Botão para entrar em envio do modelo.
@@ -294,18 +253,36 @@ namespace ModbusTCP_Client
                 txtFileName.Click -= btnLoad_Click;
             }
         }
-
         // Função para filtragem do arquivo .xlsx.
         private void txtSearchExpr_TextChanged(object sender, EventArgs e)
         {
             // Se existe algum código lido é realizada a filtragem do datagrid com o excel carregado.
             if (!string.IsNullOrEmpty(txtSearchExpr.Text))
             {
-                dataGridEmpList.DataSource = MyExcel.FilterEmpList(cmbSearch.Text.ToString(), txtSearchExpr.Text.ToLower());
+                //dataGridEmpList.DataSource = MyExcel.FilterEmpList(cmbSearch.Text.ToString(), txtSearchExpr.Text.ToLower());
                 try
                 {
-                    int Rows = dataGridEmpList.Rows.Count;
-                    if(Rows == 1)
+                    string SearchValue = txtSearchExpr.Text.ToString();
+                    bool found = false;
+                    dataGridEmpList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    try
+                    {
+                        dataGridEmpList.ClearSelection();
+                        foreach(DataGridViewRow row in dataGridEmpList.Rows)
+                        {
+                            if (row.Cells[0].Value.ToString().Equals(SearchValue))
+                            {
+                                row.Selected = true;
+                                found = true;
+                                break;
+                            }
+                        }
+                    }
+                    catch
+                        {
+                        found = false; ;
+                        }
+                    if (found)
                     {
                         // Se o código lido for único, o Código e o Tipo do óleo são lançados para a página da IHM.
                         txtCodigoOleo.Text = dataGridEmpList.Rows[dataGridEmpList.Rows.Count - 1].Cells[1].Value.ToString();
@@ -327,10 +304,9 @@ namespace ModbusTCP_Client
             }
             else
             {
-                dataGridEmpList.DataSource = MyExcel.EmpList;
+                dataGridEmpList.ClearSelection();
             }
         }
-
         // Botão para login no sistema.
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -409,22 +385,60 @@ namespace ModbusTCP_Client
         {
             txtSearchExpr.Text = txtCodigoProd.Text;
         }
-
         // Botão para carrgar a planilha a partir do caminho na caixa de texto.
         private void btnAbreDados_Click(object sender, EventArgs e)
         {
             try
             {
-                //MyExcel.DB_PATH = ExcelDialog.FileName;
-                MyExcel.DB_PATH = txtFileName.Text;
-                MyExcel.InitializeExcel();
-                dataGridEmpList.DataSource = MyExcel.ReadMyExcel();              
-                LabelStrip001.Text = " Dados carregados com sucesso. ";
-                tabControl1.SelectedIndex = (tabControl1.SelectedIndex + 1) % tabControl1.TabCount;
-                MyExcel.CloseExcel();
+                var connectionStringFormat = ConfigurationManager.AppSettings["Microsoft.ACE.OLEDB"].ToString();
+ 
+                var excelNamePath = txtFileName.Text.ToString();
+                FileInfo finfo = new FileInfo(excelNamePath);
+                string excelFileName = finfo.Name.ToString();
+                var dataSet = new DataSet(excelFileName);
+                //Setup Connection string based on which excel file format we are using
+                var excelType = "Excel 8.0";
+                if (excelFileName.Contains(".xlsx")){excelType = "Excel 12.0 XML";}
+                var connectionString = string.Format(connectionStringFormat, excelNamePath, excelType);
+                //Create a connection to the excel file
+                using (var oleDbConnection = new OleDbConnection(connectionString))
+                {
+                    oleDbConnection.Open();
+                    var schemaDataTable = (DataTable)oleDbConnection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                    oleDbConnection.Close();
+                    var sheetsName = GetSheetsName(schemaDataTable);
+                    //schemaDataTable.Columns[0].DataType = typeof(String);
+
+                    //For each sheet name
+                    OleDbCommand selectCommand = null;
+                    for (var i = 0; i< sheetsName.Count;i++)
+                    {
+                        //Setup select command
+                        selectCommand = new OleDbCommand();
+                        selectCommand.CommandText = "SELECT * FROM [" + sheetsName[i] + "]";
+                        selectCommand.Connection = oleDbConnection;
+
+                        oleDbConnection.Open();
+                        using(var oleDbDataReader = selectCommand.ExecuteReader(CommandBehavior.CloseConnection))
+                        {
+                            //Convert data to DataTable
+                            var dataTable =new DataTable(sheetsName[i].Replace("$", "").Replace("'", ""));
+                            dataTable.Load(oleDbDataReader);
+
+                            //Add to Dataset
+                            dataSet.Tables.Add(dataTable); //dataTable
+                            
+                           
+                            dataGridEmpList.DataSource = dataSet.Tables[0];
+                            //dataGridEmpList.AutoGenerateColumns = true;
+                        }
+                    }
+
+                }
             }
-            catch
+            catch (Exception expn)
             {
+                MessageBox.Show(expn.ToString());  //Remove "//" to get the exception when it occour
                 LabelStrip001.Text = " Ocorreu um erro ao carregar os dados. ";
             }
         }
@@ -432,6 +446,15 @@ namespace ModbusTCP_Client
         private void FrmMainPage_Load(object sender, EventArgs e)
         {
 
+        }
+        private List<string> GetSheetsName(DataTable schemaDataTable)
+        {
+            var sheets = new List<string>();
+            foreach(var dataRow in schemaDataTable.AsEnumerable())
+            {
+                sheets.Add(dataRow.ItemArray[2].ToString());
+            }
+            return sheets;
         }
     }
 }
