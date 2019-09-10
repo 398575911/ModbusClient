@@ -1,3 +1,0 @@
-IPAdress = 192.168.137.150
-Port = 502
-Data = D:\HEX_Automation_ModbusTCP_Client\Brasil_Setup.xlsx
