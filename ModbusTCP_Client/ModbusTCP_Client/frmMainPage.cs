@@ -281,14 +281,18 @@ namespace ModbusTCP_Client
                 Thread t = new Thread(() => funcAbreDados(txtFileName.Text.ToString()));
                 t.Start();
                 t.Join();
+                dataGridEmpList.DataSource = ds.Tables[0];
                 DataInfo.Text = "Dados Carregados";
+  
             }
             catch (Exception expn)
             {
-                MessageBox.Show(expn.ToString());
+                //MessageBox.Show(expn.ToString());
+                MessageBox.Show("Erro ao Carregar dados, verifique a existencia e integridade do Arquivo");
                 LabelStrip001.Text = " Ocorreu um erro ao carregar os dados. ";
+                DataInfo.Text = "Erro ao Carregar Dados";
             }
-            dataGridEmpList.DataSource = ds.Tables[0];
+            
         }
 
         private void funcCarregaCfg()
@@ -346,29 +350,37 @@ namespace ModbusTCP_Client
             var excelType = "Excel 11.0";
             if (excelFileName.Contains(".xls")) { excelType = "Excel 12.0 XML"; }
             var connectionString = string.Format(connectionStringFormat, excelNamePath, excelType);
-            using (var oleDbConnection = new OleDbConnection(connectionString))
+            try
             {
-                oleDbConnection.Open();
-                var schemaDataTable = (DataTable)oleDbConnection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-                oleDbConnection.Close();
-                var sheetsName = GetSheetsName(schemaDataTable);
-
-                OleDbCommand selectCommand = null;
-
-                selectCommand = new OleDbCommand();
-                selectCommand.CommandText = "SELECT * FROM [" + sheetsName[1] + "]";
-                selectCommand.Connection = oleDbConnection;
-
-                oleDbConnection.Open();
-                using (var oleDbDataReader = selectCommand.ExecuteReader(CommandBehavior.CloseConnection))
+                using (var oleDbConnection = new OleDbConnection(connectionString))
                 {
-                    var dataTable = new DataTable(sheetsName[1].Replace("$", "").Replace("'", ""));
-                    dataTable.Load(oleDbDataReader);
-                    dataSet.Tables.Add(dataTable); //dataTable 
+                    oleDbConnection.Open();
+                    var schemaDataTable = (DataTable)oleDbConnection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                    oleDbConnection.Close();
+                    var sheetsName = GetSheetsName(schemaDataTable);
 
+                    OleDbCommand selectCommand = null;
+
+                    selectCommand = new OleDbCommand();
+                    selectCommand.CommandText = "SELECT * FROM [" + sheetsName[1] + "]";
+                    selectCommand.Connection = oleDbConnection;
+
+                    oleDbConnection.Open();
+                    using (var oleDbDataReader = selectCommand.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+                        var dataTable = new DataTable(sheetsName[1].Replace("$", "").Replace("'", ""));
+                        dataTable.Load(oleDbDataReader);
+                        dataSet.Tables.Add(dataTable); //dataTable 
+
+                    }
                 }
+                ds = dataSet;
             }
-            ds = dataSet;
+            catch
+            {
+                //LabelStrip001.Text = " Não foi possível carregar arquivo excel.";
+            }
+           
         }
 
         private void txtCodigoProd_TextChanged(object sender, EventArgs e)

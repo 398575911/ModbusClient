@@ -68,7 +68,6 @@ C:\Users\lubck\Documents\GitHub\ModbusClient\HEX_Automation_ModbusTCP_Client\Mod
 C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csprojAssemblyReference.cache
 C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client.frmMainPage.resources
 C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.GenerateResource.cache
-C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.CoreCompileInputs.cache
 C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\obj\Debug\ModbusTCP_Client_BK.csproj.CopyComplete
 C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\bin\Debug\WNG_OilSelection.exe.config
 C:\Users\lubck\Documents\GitHub\ModbusClient\ModbusTCP_Client\ModbusTCP_Client\bin\Debug\WNG_OilSelection.exe
