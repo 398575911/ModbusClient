@@ -216,7 +216,7 @@
             // 
             this.txtRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtRead.Location = new System.Drawing.Point(160, 168);
-            this.txtRead.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtRead.Margin = new System.Windows.Forms.Padding(6);
             this.txtRead.Multiline = true;
             this.txtRead.Name = "txtRead";
             this.txtRead.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -239,7 +239,7 @@
             // 
             this.txtReadAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtReadAddress.Location = new System.Drawing.Point(160, 68);
-            this.txtReadAddress.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtReadAddress.Margin = new System.Windows.Forms.Padding(6);
             this.txtReadAddress.Name = "txtReadAddress";
             this.txtReadAddress.ReadOnly = true;
             this.txtReadAddress.Size = new System.Drawing.Size(180, 32);
@@ -250,7 +250,7 @@
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtQuantity.Location = new System.Drawing.Point(160, 116);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(6);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.ReadOnly = true;
             this.txtQuantity.Size = new System.Drawing.Size(180, 32);
@@ -273,7 +273,7 @@
             // 
             this.btnWriteSingle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnWriteSingle.Location = new System.Drawing.Point(854, 168);
-            this.btnWriteSingle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnWriteSingle.Margin = new System.Windows.Forms.Padding(6);
             this.btnWriteSingle.Name = "btnWriteSingle";
             this.btnWriteSingle.Size = new System.Drawing.Size(184, 90);
             this.btnWriteSingle.TabIndex = 11;
@@ -286,7 +286,7 @@
             // 
             this.txtWriteSingleAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtWriteSingleAddress.Location = new System.Drawing.Point(854, 68);
-            this.txtWriteSingleAddress.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtWriteSingleAddress.Margin = new System.Windows.Forms.Padding(6);
             this.txtWriteSingleAddress.Name = "txtWriteSingleAddress";
             this.txtWriteSingleAddress.ReadOnly = true;
             this.txtWriteSingleAddress.Size = new System.Drawing.Size(180, 32);
@@ -298,7 +298,7 @@
             this.checkTrueWrite.AutoSize = true;
             this.checkTrueWrite.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.checkTrueWrite.Location = new System.Drawing.Point(854, 124);
-            this.checkTrueWrite.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkTrueWrite.Margin = new System.Windows.Forms.Padding(6);
             this.checkTrueWrite.Name = "checkTrueWrite";
             this.checkTrueWrite.Size = new System.Drawing.Size(190, 30);
             this.checkTrueWrite.TabIndex = 13;
@@ -309,7 +309,7 @@
             // 
             this.txtStartingAddressMultCoil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtStartingAddressMultCoil.Location = new System.Drawing.Point(504, 68);
-            this.txtStartingAddressMultCoil.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtStartingAddressMultCoil.Margin = new System.Windows.Forms.Padding(6);
             this.txtStartingAddressMultCoil.Name = "txtStartingAddressMultCoil";
             this.txtStartingAddressMultCoil.ReadOnly = true;
             this.txtStartingAddressMultCoil.Size = new System.Drawing.Size(180, 32);
@@ -332,7 +332,7 @@
             // 
             this.txtQuantityMultCoil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtQuantityMultCoil.Location = new System.Drawing.Point(504, 116);
-            this.txtQuantityMultCoil.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtQuantityMultCoil.Margin = new System.Windows.Forms.Padding(6);
             this.txtQuantityMultCoil.Name = "txtQuantityMultCoil";
             this.txtQuantityMultCoil.ReadOnly = true;
             this.txtQuantityMultCoil.Size = new System.Drawing.Size(180, 32);
@@ -343,7 +343,7 @@
             // 
             this.btnWriteMultCoils.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnWriteMultCoils.Location = new System.Drawing.Point(504, 510);
-            this.btnWriteMultCoils.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnWriteMultCoils.Margin = new System.Windows.Forms.Padding(6);
             this.btnWriteMultCoils.Name = "btnWriteMultCoils";
             this.btnWriteMultCoils.Size = new System.Drawing.Size(198, 90);
             this.btnWriteMultCoils.TabIndex = 16;
@@ -357,7 +357,7 @@
             this.chkMult1.AutoSize = true;
             this.chkMult1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult1.Location = new System.Drawing.Point(504, 168);
-            this.chkMult1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult1.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult1.Name = "chkMult1";
             this.chkMult1.Size = new System.Drawing.Size(207, 30);
             this.chkMult1.TabIndex = 13;
@@ -369,7 +369,7 @@
             this.chkMult2.AutoSize = true;
             this.chkMult2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult2.Location = new System.Drawing.Point(504, 200);
-            this.chkMult2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult2.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult2.Name = "chkMult2";
             this.chkMult2.Size = new System.Drawing.Size(206, 30);
             this.chkMult2.TabIndex = 13;
@@ -381,7 +381,7 @@
             this.chkMult3.AutoSize = true;
             this.chkMult3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult3.Location = new System.Drawing.Point(504, 232);
-            this.chkMult3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult3.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult3.Name = "chkMult3";
             this.chkMult3.Size = new System.Drawing.Size(206, 30);
             this.chkMult3.TabIndex = 13;
@@ -393,7 +393,7 @@
             this.chkMult4.AutoSize = true;
             this.chkMult4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult4.Location = new System.Drawing.Point(504, 264);
-            this.chkMult4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult4.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult4.Name = "chkMult4";
             this.chkMult4.Size = new System.Drawing.Size(206, 30);
             this.chkMult4.TabIndex = 13;
@@ -405,7 +405,7 @@
             this.chkMult5.AutoSize = true;
             this.chkMult5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult5.Location = new System.Drawing.Point(504, 300);
-            this.chkMult5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult5.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult5.Name = "chkMult5";
             this.chkMult5.Size = new System.Drawing.Size(206, 30);
             this.chkMult5.TabIndex = 13;
@@ -417,7 +417,7 @@
             this.chkMult6.AutoSize = true;
             this.chkMult6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult6.Location = new System.Drawing.Point(504, 332);
-            this.chkMult6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult6.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult6.Name = "chkMult6";
             this.chkMult6.Size = new System.Drawing.Size(206, 30);
             this.chkMult6.TabIndex = 13;
@@ -429,7 +429,7 @@
             this.chkMult7.AutoSize = true;
             this.chkMult7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult7.Location = new System.Drawing.Point(504, 368);
-            this.chkMult7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult7.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult7.Name = "chkMult7";
             this.chkMult7.Size = new System.Drawing.Size(206, 30);
             this.chkMult7.TabIndex = 13;
@@ -441,7 +441,7 @@
             this.chkMult8.AutoSize = true;
             this.chkMult8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult8.Location = new System.Drawing.Point(504, 400);
-            this.chkMult8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult8.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult8.Name = "chkMult8";
             this.chkMult8.Size = new System.Drawing.Size(206, 30);
             this.chkMult8.TabIndex = 13;
@@ -453,7 +453,7 @@
             this.chkMult9.AutoSize = true;
             this.chkMult9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult9.Location = new System.Drawing.Point(504, 436);
-            this.chkMult9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult9.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult9.Name = "chkMult9";
             this.chkMult9.Size = new System.Drawing.Size(206, 30);
             this.chkMult9.TabIndex = 13;
@@ -465,7 +465,7 @@
             this.chkMult10.AutoSize = true;
             this.chkMult10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.chkMult10.Location = new System.Drawing.Point(504, 472);
-            this.chkMult10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMult10.Margin = new System.Windows.Forms.Padding(6);
             this.chkMult10.Name = "chkMult10";
             this.chkMult10.Size = new System.Drawing.Size(206, 30);
             this.chkMult10.TabIndex = 13;
@@ -537,7 +537,7 @@
             this.tableLayoutPanel1.Controls.Add(this.EST_P00008, 3, 9);
             this.tableLayoutPanel1.Controls.Add(this.EST_P00009, 3, 10);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(900, 32);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
@@ -1095,7 +1095,7 @@
             this.tableLayoutPanel2.Controls.Add(this.EST_P00048, 3, 9);
             this.tableLayoutPanel2.Controls.Add(this.EST_P00049, 3, 10);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(900, 572);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 11;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
@@ -1620,7 +1620,7 @@
             // 
             this.txtIpAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtIpAddress.Location = new System.Drawing.Point(236, 68);
-            this.txtIpAddress.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtIpAddress.Margin = new System.Windows.Forms.Padding(6);
             this.txtIpAddress.Name = "txtIpAddress";
             this.txtIpAddress.Size = new System.Drawing.Size(260, 41);
             this.txtIpAddress.TabIndex = 0;
@@ -1653,7 +1653,7 @@
             // 
             this.txtPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtPort.Location = new System.Drawing.Point(236, 128);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(6);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(260, 41);
             this.txtPort.TabIndex = 1;
@@ -1695,7 +1695,7 @@
             // 
             this.txtCodigoProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtCodigoProd.Location = new System.Drawing.Point(426, 308);
-            this.txtCodigoProd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCodigoProd.Margin = new System.Windows.Forms.Padding(6);
             this.txtCodigoProd.Multiline = true;
             this.txtCodigoProd.Name = "txtCodigoProd";
             this.txtCodigoProd.Size = new System.Drawing.Size(324, 60);
@@ -1710,7 +1710,7 @@
             this.tabControl1.Controls.Add(this.tabPageCoilRegister);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.tabControl1.Location = new System.Drawing.Point(24, 24);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(2236, 1224);
@@ -1722,9 +1722,9 @@
             this.tabPageConexao.Controls.Add(this.grpBoxLogin);
             this.tabPageConexao.Controls.Add(this.grpBoxConexao);
             this.tabPageConexao.Location = new System.Drawing.Point(8, 50);
-            this.tabPageConexao.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageConexao.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageConexao.Name = "tabPageConexao";
-            this.tabPageConexao.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageConexao.Padding = new System.Windows.Forms.Padding(6);
             this.tabPageConexao.Size = new System.Drawing.Size(2220, 1166);
             this.tabPageConexao.TabIndex = 0;
             this.tabPageConexao.Text = "Login / Conexão";
@@ -1734,7 +1734,7 @@
             // 
             this.pictureBox2.Image = global::WNG_OilSelection.Properties.Resources.Ingersoll_Rand;
             this.pictureBox2.Location = new System.Drawing.Point(1212, 72);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(544, 164);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1751,9 +1751,9 @@
             this.grpBoxLogin.Controls.Add(this.txtUser);
             this.grpBoxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.grpBoxLogin.Location = new System.Drawing.Point(30, 32);
-            this.grpBoxLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxLogin.Margin = new System.Windows.Forms.Padding(6);
             this.grpBoxLogin.Name = "grpBoxLogin";
-            this.grpBoxLogin.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxLogin.Padding = new System.Windows.Forms.Padding(6);
             this.grpBoxLogin.Size = new System.Drawing.Size(1136, 202);
             this.grpBoxLogin.TabIndex = 25;
             this.grpBoxLogin.TabStop = false;
@@ -1765,7 +1765,7 @@
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.Location = new System.Drawing.Point(808, 60);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(298, 104);
             this.btnLogout.TabIndex = 5;
@@ -1789,7 +1789,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.Location = new System.Drawing.Point(512, 60);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(284, 104);
             this.btnLogin.TabIndex = 2;
@@ -1812,7 +1812,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtPassword.Location = new System.Drawing.Point(236, 116);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(6);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(260, 41);
@@ -1823,7 +1823,7 @@
             // 
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtUser.Location = new System.Drawing.Point(236, 60);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(6);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(260, 41);
             this.txtUser.TabIndex = 0;
@@ -1840,9 +1840,9 @@
             this.grpBoxConexao.Enabled = false;
             this.grpBoxConexao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.grpBoxConexao.Location = new System.Drawing.Point(30, 246);
-            this.grpBoxConexao.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxConexao.Margin = new System.Windows.Forms.Padding(6);
             this.grpBoxConexao.Name = "grpBoxConexao";
-            this.grpBoxConexao.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxConexao.Padding = new System.Windows.Forms.Padding(6);
             this.grpBoxConexao.Size = new System.Drawing.Size(1136, 212);
             this.grpBoxConexao.TabIndex = 24;
             this.grpBoxConexao.TabStop = false;
@@ -1853,7 +1853,7 @@
             this.btnCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnCon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCon.Location = new System.Drawing.Point(512, 68);
-            this.btnCon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCon.Margin = new System.Windows.Forms.Padding(6);
             this.btnCon.Name = "btnCon";
             this.btnCon.Size = new System.Drawing.Size(284, 104);
             this.btnCon.TabIndex = 2;
@@ -1867,7 +1867,7 @@
             this.btnDisconnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnDisconnect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDisconnect.Location = new System.Drawing.Point(808, 68);
-            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(6);
             this.btnDisconnect.Name = "btnDisconnect";
             this.btnDisconnect.Size = new System.Drawing.Size(298, 104);
             this.btnDisconnect.TabIndex = 8;
@@ -1880,9 +1880,9 @@
             this.tabPageExcel.Controls.Add(this.groupExcel);
             this.tabPageExcel.Controls.Add(this.dataGridEmpList);
             this.tabPageExcel.Location = new System.Drawing.Point(8, 50);
-            this.tabPageExcel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageExcel.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageExcel.Name = "tabPageExcel";
-            this.tabPageExcel.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageExcel.Padding = new System.Windows.Forms.Padding(6);
             this.tabPageExcel.Size = new System.Drawing.Size(2220, 1166);
             this.tabPageExcel.TabIndex = 3;
             this.tabPageExcel.Text = "Dados";
@@ -1900,7 +1900,7 @@
             this.groupExcel.Controls.Add(this.txtFileName);
             this.groupExcel.Enabled = false;
             this.groupExcel.Location = new System.Drawing.Point(16, 12);
-            this.groupExcel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupExcel.Margin = new System.Windows.Forms.Padding(6);
             this.groupExcel.Name = "groupExcel";
             this.groupExcel.Size = new System.Drawing.Size(1520, 262);
             this.groupExcel.TabIndex = 6;
@@ -1909,7 +1909,7 @@
             // 
             this.DataInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
             this.DataInfo.Location = new System.Drawing.Point(542, 138);
-            this.DataInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DataInfo.Margin = new System.Windows.Forms.Padding(6);
             this.DataInfo.Name = "DataInfo";
             this.DataInfo.Size = new System.Drawing.Size(954, 98);
             this.DataInfo.TabIndex = 8;
@@ -1919,7 +1919,7 @@
             this.btnAbreDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnAbreDados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAbreDados.Location = new System.Drawing.Point(1208, 16);
-            this.btnAbreDados.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAbreDados.Margin = new System.Windows.Forms.Padding(6);
             this.btnAbreDados.Name = "btnAbreDados";
             this.btnAbreDados.Size = new System.Drawing.Size(288, 96);
             this.btnAbreDados.TabIndex = 7;
@@ -1942,7 +1942,7 @@
             // 
             this.txtSearchExpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtSearchExpr.Location = new System.Drawing.Point(254, 200);
-            this.txtSearchExpr.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtSearchExpr.Margin = new System.Windows.Forms.Padding(6);
             this.txtSearchExpr.Name = "txtSearchExpr";
             this.txtSearchExpr.Size = new System.Drawing.Size(252, 41);
             this.txtSearchExpr.TabIndex = 4;
@@ -1975,7 +1975,7 @@
             "Nozzel_Coefficient",
             "Oil_Type"});
             this.cmbSearch.Location = new System.Drawing.Point(254, 138);
-            this.cmbSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmbSearch.Margin = new System.Windows.Forms.Padding(6);
             this.cmbSearch.Name = "cmbSearch";
             this.cmbSearch.Size = new System.Drawing.Size(252, 41);
             this.cmbSearch.TabIndex = 3;
@@ -1986,7 +1986,7 @@
             this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnLoad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLoad.Location = new System.Drawing.Point(908, 16);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(6);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(288, 96);
             this.btnLoad.TabIndex = 1;
@@ -1998,7 +1998,7 @@
             // 
             this.txtFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtFileName.Location = new System.Drawing.Point(12, 40);
-            this.txtFileName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtFileName.Margin = new System.Windows.Forms.Padding(6);
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.Size = new System.Drawing.Size(880, 41);
             this.txtFileName.TabIndex = 0;
@@ -2007,7 +2007,7 @@
             // 
             this.dataGridEmpList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridEmpList.Location = new System.Drawing.Point(16, 284);
-            this.dataGridEmpList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridEmpList.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridEmpList.Name = "dataGridEmpList";
             this.dataGridEmpList.RowHeadersWidth = 82;
             this.dataGridEmpList.Size = new System.Drawing.Size(2190, 876);
@@ -2019,9 +2019,9 @@
             this.tabPageIHM.Controls.Add(this.tableLayoutPanel2);
             this.tabPageIHM.Controls.Add(this.tableLayoutPanel1);
             this.tabPageIHM.Location = new System.Drawing.Point(8, 50);
-            this.tabPageIHM.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageIHM.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageIHM.Name = "tabPageIHM";
-            this.tabPageIHM.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageIHM.Padding = new System.Windows.Forms.Padding(6);
             this.tabPageIHM.Size = new System.Drawing.Size(2220, 1166);
             this.tabPageIHM.TabIndex = 1;
             this.tabPageIHM.Text = "IHM";
@@ -2042,7 +2042,7 @@
             this.groupIHM.Controls.Add(this.label84);
             this.groupIHM.Enabled = false;
             this.groupIHM.Location = new System.Drawing.Point(0, 12);
-            this.groupIHM.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupIHM.Margin = new System.Windows.Forms.Padding(6);
             this.groupIHM.Name = "groupIHM";
             this.groupIHM.Size = new System.Drawing.Size(864, 844);
             this.groupIHM.TabIndex = 28;
@@ -2052,7 +2052,7 @@
             this.txtConexao.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtConexao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtConexao.Location = new System.Drawing.Point(422, 28);
-            this.txtConexao.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtConexao.Margin = new System.Windows.Forms.Padding(6);
             this.txtConexao.Multiline = true;
             this.txtConexao.Name = "txtConexao";
             this.txtConexao.ReadOnly = true;
@@ -2064,7 +2064,7 @@
             this.txtCodigoOleo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtCodigoOleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtCodigoOleo.Location = new System.Drawing.Point(426, 490);
-            this.txtCodigoOleo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCodigoOleo.Margin = new System.Windows.Forms.Padding(6);
             this.txtCodigoOleo.Multiline = true;
             this.txtCodigoOleo.Name = "txtCodigoOleo";
             this.txtCodigoOleo.ReadOnly = true;
@@ -2076,7 +2076,7 @@
             this.txtTipoOleo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtTipoOleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtTipoOleo.Location = new System.Drawing.Point(426, 398);
-            this.txtTipoOleo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTipoOleo.Margin = new System.Windows.Forms.Padding(6);
             this.txtTipoOleo.Multiline = true;
             this.txtTipoOleo.Name = "txtTipoOleo";
             this.txtTipoOleo.ReadOnly = true;
@@ -2088,7 +2088,7 @@
             this.txtModo.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtModo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtModo.Location = new System.Drawing.Point(422, 112);
-            this.txtModo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtModo.Margin = new System.Windows.Forms.Padding(6);
             this.txtModo.Multiline = true;
             this.txtModo.Name = "txtModo";
             this.txtModo.ReadOnly = true;
@@ -2111,7 +2111,7 @@
             this.btnEnviarModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnEnviarModelo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnviarModelo.Location = new System.Drawing.Point(426, 580);
-            this.btnEnviarModelo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEnviarModelo.Margin = new System.Windows.Forms.Padding(6);
             this.btnEnviarModelo.Name = "btnEnviarModelo";
             this.btnEnviarModelo.Size = new System.Drawing.Size(328, 100);
             this.btnEnviarModelo.TabIndex = 27;
@@ -2124,9 +2124,9 @@
             this.tabPageCoilRegister.Controls.Add(this.grpBoxRegisters);
             this.tabPageCoilRegister.Controls.Add(this.grpBoxCoils);
             this.tabPageCoilRegister.Location = new System.Drawing.Point(8, 50);
-            this.tabPageCoilRegister.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageCoilRegister.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageCoilRegister.Name = "tabPageCoilRegister";
-            this.tabPageCoilRegister.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageCoilRegister.Padding = new System.Windows.Forms.Padding(6);
             this.tabPageCoilRegister.Size = new System.Drawing.Size(2220, 1166);
             this.tabPageCoilRegister.TabIndex = 2;
             this.tabPageCoilRegister.Text = "Coils/Registers";
@@ -2137,9 +2137,9 @@
             this.grpBoxRegisters.Enabled = false;
             this.grpBoxRegisters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.grpBoxRegisters.Location = new System.Drawing.Point(1126, 28);
-            this.grpBoxRegisters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxRegisters.Margin = new System.Windows.Forms.Padding(6);
             this.grpBoxRegisters.Name = "grpBoxRegisters";
-            this.grpBoxRegisters.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxRegisters.Padding = new System.Windows.Forms.Padding(6);
             this.grpBoxRegisters.Size = new System.Drawing.Size(1066, 728);
             this.grpBoxRegisters.TabIndex = 18;
             this.grpBoxRegisters.TabStop = false;
@@ -2176,9 +2176,9 @@
             this.grpBoxCoils.Enabled = false;
             this.grpBoxCoils.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.grpBoxCoils.Location = new System.Drawing.Point(30, 28);
-            this.grpBoxCoils.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxCoils.Margin = new System.Windows.Forms.Padding(6);
             this.grpBoxCoils.Name = "grpBoxCoils";
-            this.grpBoxCoils.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxCoils.Padding = new System.Windows.Forms.Padding(6);
             this.grpBoxCoils.Size = new System.Drawing.Size(1066, 728);
             this.grpBoxCoils.TabIndex = 17;
             this.grpBoxCoils.TabStop = false;
@@ -2188,7 +2188,7 @@
             // 
             this.btnCyclicRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnCyclicRead.Location = new System.Drawing.Point(160, 612);
-            this.btnCyclicRead.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCyclicRead.Margin = new System.Windows.Forms.Padding(6);
             this.btnCyclicRead.Name = "btnCyclicRead";
             this.btnCyclicRead.Size = new System.Drawing.Size(184, 90);
             this.btnCyclicRead.TabIndex = 17;
@@ -2226,7 +2226,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = global::WNG_OilSelection.Properties.Resources.LOGO_WNG_SA;
             this.pictureBox1.Location = new System.Drawing.Point(1860, 1270);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(386, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2238,10 +2238,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LabelStrip001});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1304);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 849);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 28, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(2272, 38);
+            this.statusStrip1.Size = new System.Drawing.Size(1856, 38);
             this.statusStrip1.TabIndex = 30;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -2259,12 +2259,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(2272, 1342);
+            this.ClientSize = new System.Drawing.Size(1856, 887);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Oil Selection - Ingersoll";
